@@ -5,6 +5,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
 
 
     }
@@ -42,12 +43,31 @@ public class Main {
     public static void task3() {
         System.out.println("Задача 3");
         int year = 2020;
-        if ((year % 4 == 0&&year%100!=0) || (year % 400 == 0)) {
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
             System.out.println(year + " год является високосным");
         } else {
             System.out.println(year + " год не является високосным");
         }
     }
-}
+
+    public static void task4() {
+        System.out.println("Задача 4");
+        int deliveryDistance = 108;
+        int deliverDay1 = 1;
+        int deliverDay2 = 2;
+        int deliverDay3 = 3;
+        if (deliveryDistance < 20) {
+            System.out.println("Потребуется дней: " + deliverDay1);
+        }else if((deliveryDistance >= 20) && (deliveryDistance < 60)) {
+            System.out.println("Потребуется дней: " + deliverDay2);
+        } else if ((deliveryDistance >= 60) && (deliveryDistance < 100)) {
+                    System.out.println("Потребуется дней: " + deliverDay3);
+                } else {
+                    System.out.println("Свыше 100 км доставки нет");
+                }
+            }
+        }
+
+
 
 
