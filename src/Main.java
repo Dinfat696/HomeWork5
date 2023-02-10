@@ -7,8 +7,6 @@ public class Main {
         task3();
         task4();
         task5();
-
-
     }
 
     public static void task1() {
@@ -23,23 +21,23 @@ public class Main {
 
     public static void task2() {
         System.out.println("Задача 2");
+        int clinetOS = 0;
         int clientDeviceYear = 2014;
-        if (clientDeviceYear < 2015) {
-            int clientOS = 1;
-            switch (clientOS) {
-                case 0:
-                    System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-                    break;
-                case 1:
-                    System.out.println("Установите облегченную версию приложения для Android по ссылке");
-                    break;
-                default:
-                    System.out.println("Нет такого");
-            }
-        } else if (clientDeviceYear >= 2015) {
-            System.out.println("Установите  обычное приложение");
+        if (clinetOS == 0 && clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        }
+        if (clinetOS == 0 && clientDeviceYear < 2015) {
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        }
+        if (clinetOS == 1 && clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        }
+        if (clinetOS == 1 && clientDeviceYear < 2015) {
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+
         }
     }
+
 
     public static void task3() {
         System.out.println("Задача 3");
@@ -50,6 +48,7 @@ public class Main {
             System.out.println(year + " год не является високосным");
         }
     }
+
 
     public static void task4() {
         System.out.println("Задача 4");
@@ -92,6 +91,8 @@ public class Main {
         }
     }
 }
+
+
 
 
 
